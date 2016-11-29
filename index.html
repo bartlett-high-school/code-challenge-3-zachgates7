@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<title>Raphus cucullatus</title>
+	</head>
+	<body>
+		<header>
+			<h1>Raphus cucullatus (Dodo)</h1>
+		</header>
+		<div id="main-cont">
+			<section>
+				<h2>Description</h2>
+				<p>As no complete dodo specimens exist, its external appearance, such as plumage and colouration, is hard to determine. Illustrations and written accounts of encounters with the dodo between its discovery and its extinction (1598–1662) are the primary evidence for its external appearance.</p>
+				<p>According to most representations, the dodo had greyish or brownish plumage, with lighter primary feathers and a tuft of curly light feathers high on its rear end. The head was grey and naked, the beak green, black and yellow, and the legs were stout and yellowish, with black claws. A study of the few remaining feathers on the Oxford specimen head showed that they were pennaceous rather than plumaceous (downy) and most similar to those of other pigeons.</p>
+			</section>
+			<hr>
+			<section>
+				<h2>Diet</h2>
+				<p>The dodo probably subsisted on nuts, seeds, bulbs, and roots. It has also been suggested that the dodo might have eaten crabs and shellfish, like their relatives the crowned pigeons. Its feeding habits must have been versatile, since captive specimens were probably given a wide range of food on the long sea journeys.</p>
+				<p>Oudemans suggested that as Mauritius has marked dry and wet seasons, the dodo probably fattened itself on ripe fruits at the end of the wet season to survive the dry season, when food was scarce; contemporary reports describe the bird's "greedy" appetite. France Staub suggested that they mainly fed on palm fruits, and he attempted to correlate the fat-cycle of the dodo with the fruiting regime of the palms.</p>
+			</section>
+			<hr>
+			<section>
+				<h2>Reproduction</h2>
+				<p>As it was flightless and terrestrial and there were no mammalian predators or other kinds of natural enemy on Mauritius, the dodo probably nested on the ground. Because of the possible single-egg clutch and the bird's large size, it has been proposed that the dodo was K-selected, meaning that it produced a low number of altricial offspring, which required parental care until they matured. Some evidence, including the large size and the fact that tropical and frugivorous birds have slower growth rates, indicates that the bird may have had a protracted development period.</p>
+				<p>The fact that no juvenile dodos have been found in the Mare aux Songes swamp may indicate that they produced little offspring, that they matured rapidly, that the breeding grounds were far away from the swamp, or that the risk of miring was seasonal.</p>
+			</section>
+			<hr>
+			<section>
+				<h2>Extinction</h2>
+				<p>Like many animals that evolved in isolation from significant predators, the dodo was entirely fearless of humans. This fearlessness and its inability to fly made the dodo easy prey for sailors. Although some scattered reports describe mass killings of dodos for ships' provisions, archaeological investigations have found scant evidence of human predation. Bones of at least two dodos were found in caves at Baie du Cap that sheltered fugitive slaves and convicts in the 17th century, which would not have been easily accessible to dodos because of the high, broken terrain.</p>
+				<p>The human population on Mauritius (an area of 1,860 km2 or 720 sq mi) never exceeded 50 people in the 17th century, but they introduced other animals, including dogs, pigs, cats, rats, and crab-eating macaques, which plundered dodo nests and competed for the limited food resources. At the same time, humans destroyed the forest habitat of the dodos. The impact of the introduced animals on the dodo population, especially the pigs and macaques, is today considered more severe than that of hunting.</p>
+				<h3>Remains</h3>
+				<p>The only extant remains of dodos taken to Europe in the 17th century are a dried head and foot in the Oxford University Museum of Natural History, a foot once housed in the British Museum but now lost, a skull in the University of Copenhagen Zoological Museum, and an upper jaw and leg bones in the National Museum, Prague. The last two were rediscovered and identified as dodo remains in the mid-19th century.</p>
+			</section>
+			<hr>
+		</div>
+		<div id="extra-cont">
+			<img id="img-cont" alt="dodo image" src="img/img1.jpg" />
+			<br>
+			<span>Click image to see more.</span>
+			<script>
+			$("img#img-cont").click(function () {
+				n = parseInt(this.src.match(/\d+/)[0]) + 1;
+				if (n > 4) {
+					n = 1;
+				}
+				this.src = "img/img" + n + ".jpg";
+			});
+			</script>
+		</div>
+		<footer>
+			<span>This is a 1 page website about an animal that is now extinct.</span>
+		</footer>
+	</body>
+</html>
